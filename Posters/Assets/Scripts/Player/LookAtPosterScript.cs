@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class LookAtPosterScript : MonoBehaviour
 {
     float distance = 10;
+    public TMP_Text pressButtonText;
 
     private void Start()
     {
-        
+        pressButtonText.text = "";
     }
 
     void OnTriggerEnter(Collider other)
@@ -22,7 +24,9 @@ public class LookAtPosterScript : MonoBehaviour
             {
                 // here you give instructions to the player
                 // to take the poster in your hand
+
                 other.GetComponent<PosterTask>().poster.SetActive(true);
+                
             }
         }
     }
@@ -32,6 +36,9 @@ public class LookAtPosterScript : MonoBehaviour
         if (other.CompareTag("Poster"))
         {
             // you leave the area
+            pressButtonText.text = "";
+
+            other.GetComponent<PosterTask>().poster.SetActive(false);
             Debug.Log("Pelaaja poistui alueelta");
         }
     }

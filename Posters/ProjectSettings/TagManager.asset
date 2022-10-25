@@ -7,6 +7,7 @@ TagManager:
   - Hand
   - Poster
   - Task
+  - Safe
   layers:
   - Default
   - TransparentFX
