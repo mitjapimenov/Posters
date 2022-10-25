@@ -12,12 +12,12 @@ public class ButtonHandler : MonoBehaviour
     }
     void Update()
     {
-        // closes the poster window when it is active
-        if(Input.GetKey(KeyCode.E) && task.activeInHierarchy)
-        {
-            task.SetActive(false);
-        }
-        else
-        { return; }
+        //// closes the poster window when it is active
+        //if(Input.GetKey(KeyCode.E) && task.activeInHierarchy)
+        //{
+        //    task.SetActive(false);
+        //}
+        //else
+        //{ return; }
     }
 }
