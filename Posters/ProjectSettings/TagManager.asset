@@ -8,6 +8,7 @@ TagManager:
   - Poster
   - Task
   - Safe
+  - PuzzleSafe
   layers:
   - Default
   - TransparentFX
